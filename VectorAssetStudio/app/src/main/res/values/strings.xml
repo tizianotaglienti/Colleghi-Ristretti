@@ -1,0 +1,6 @@
+<resources>
+    <string name="text_app_name">Vector Asset Studio</string>
+    <string name="text_differenze">Vedi la differenza tra i 2 formati</string>
+    <string name="text_raster">Esempio Raster</string>
+    <string name="text_vector">Esempio Vector</string>
+</resources>
