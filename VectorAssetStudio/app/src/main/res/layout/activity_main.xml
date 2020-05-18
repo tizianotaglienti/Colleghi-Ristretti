@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/sfondo_blu_red"
     tools:context=".activities.MainActivity">
 
     <Button
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
+        android:background="@color/mywhite"
         android:text="RASTER"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnVector"
@@ -23,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="135dp"
         android:layout_marginEnd="50dp"
+        android:background="@color/mywhite"
         android:text="VECTOR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,6 +42,7 @@
         android:fontFamily="@font/comfortaa_bold"
         android:gravity="center"
         android:text="@string/text_app_name"
+        android:textColor="@color/mywhite"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,6 +59,7 @@
         android:fontFamily="@font/comfortaa_bold"
         android:gravity="center"
         android:text="@string/text_differenze"
+        android:textColor="@color/mywhite"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
