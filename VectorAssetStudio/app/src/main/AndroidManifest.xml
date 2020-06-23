@@ -19,6 +19,7 @@
 
         <activity android:name=".activities.GalleryActivity"/>
         <activity android:name=".activities.VectorActivity"/>
+        <activity android:name=".activities.RasterActivity"/>
 
         <meta-data
             android:name="preloaded_fonts"

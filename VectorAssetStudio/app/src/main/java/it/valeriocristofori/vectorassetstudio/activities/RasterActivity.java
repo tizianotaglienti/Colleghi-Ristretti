@@ -9,26 +9,26 @@ import com.github.chrisbanes.photoview.PhotoView;
 
 import it.valeriocristofori.vectorassetstudio.R;
 
-public class VectorActivity extends AppCompatActivity {
+public class RasterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_vector);
+        setContentView(R.layout.layout_raster);
         new Holder(this);
     }
 
     class Holder{
 
         private Context context;
-        private PhotoView pvVector;
+        private PhotoView pvRaster;
 
         public Holder(Context context){
 
             this.context = context;
-            this.pvVector = findViewById(R.id.pvRaster);
+            this.pvRaster = findViewById(R.id.pvRaster);
 
-            this.pvVector.setImageResource(getIntent().getIntExtra("image", 1));
+            this.pvRaster.setImageResource(getIntent().getIntExtra("image", 1));
 
 
 

@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvRaster"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -24,10 +24,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.github.chrisbanes.photoview.PhotoView
-        android:id="@+id/pvVector"
+        android:id="@+id/pvRaster"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="80dp"
+        android:background="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

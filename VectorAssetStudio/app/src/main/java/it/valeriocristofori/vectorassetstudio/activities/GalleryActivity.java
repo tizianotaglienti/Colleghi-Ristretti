@@ -14,7 +14,8 @@ import static it.valeriocristofori.vectorassetstudio.R.layout.layout_gallery;
 
 public class GalleryActivity extends AppCompatActivity {
 
-    private int arrayImages[] = {R.drawable.android_logo_raster,R.drawable.facebook,R.drawable.finn, R.drawable.firefox,R.drawable.luigi, R.drawable.marge, R.drawable.pinocchio, R.drawable.thunderbird};
+    private int arrayImages[] = {R.drawable.android_logo_raster,  R.drawable.finn,  R.drawable.firefox, R.drawable.luigi, R.drawable.marge, R.drawable.pinocchio,  R.drawable.thunderbird};
+    private int arrayImagesVector[] = {R.drawable.ic_android_logo_vector,R.drawable.ic_finn,R.drawable.ic_firefox, R.drawable.ic_luigi, R.drawable.ic_marge, R.drawable.ic_pinocchio, R.drawable.ic_thunderbird};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +36,8 @@ public class GalleryActivity extends AppCompatActivity {
             this.context = context;
             this.rvGallery = findViewById(R.id.rvGallery);
 
-            //setup array images with drawables
 
-
-            RecyclerGallery recyclerGallery = new RecyclerGallery( this.context, arrayImages );
+            RecyclerGallery recyclerGallery = new RecyclerGallery( this.context, arrayImages, arrayImagesVector );
 
             //setting
             rvGallery.setAdapter(recyclerGallery);

@@ -25,17 +25,15 @@ public class MainActivity extends AppCompatActivity {
         private Context context;
         private Intent intent;
         private Button button_gallery;
-        //private Button btnVector;
 
 
         public Holder( Context context ){
 
             this.context = context;
             this.button_gallery = findViewById(R.id.button_gallery);
-            //this.btnVector = findViewById(R.id.btnVector);
+
 
             this.button_gallery.setOnClickListener(this);
-            //this.btnVector.setOnClickListener(this);
 
 
 
@@ -43,20 +41,9 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View view) {
-            switch (view.getId()){
-
-                case R.id.button_gallery:
+            if (view.getId() == R.id.button_gallery){
                     this.intent = new Intent(this.context, GalleryActivity.class);
                     startActivityForResult(intent, 0);
-                    break;
-
-                /*case R.id.btnVector:
-                    this.intent = new Intent(this.context, VectorActivity.class);
-                    startActivityForResult(intent, 0);
-                    break;
-
-                 */
-
 
             }
         }

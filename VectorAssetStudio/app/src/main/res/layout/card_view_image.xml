@@ -29,6 +29,30 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/android_logo_raster" />
+
+            <Button
+                android:id="@+id/btnRaster"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:background="@color/myBlack"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text="@string/raster"
+                android:textColor="@color/mywhite"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/ivImageGallery" />
+
+            <Button
+                android:id="@+id/btnVector"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:text="@string/vector"
+                android:fontFamily="@font/comfortaa_bold"
+                android:background="@color/myBlack"
+                android:textColor="@color/mywhite"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ivImageGallery" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
