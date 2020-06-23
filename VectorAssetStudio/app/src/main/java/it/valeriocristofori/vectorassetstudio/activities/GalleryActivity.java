@@ -14,7 +14,7 @@ import static it.valeriocristofori.vectorassetstudio.R.layout.layout_gallery;
 
 public class GalleryActivity extends AppCompatActivity {
 
-    private int arrayImages[] = {R.drawable.android_logo_raster,R.drawable.drago, R.drawable.pinocchio, R.drawable.finn};
+    private int arrayImages[] = {R.drawable.android_logo_raster,R.drawable.facebook,R.drawable.finn, R.drawable.firefox,R.drawable.luigi, R.drawable.marge, R.drawable.pinocchio, R.drawable.thunderbird};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

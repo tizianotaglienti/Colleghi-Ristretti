@@ -44,7 +44,7 @@ public class RecyclerGallery extends RecyclerView.Adapter<RecyclerGallery.MyView
 
             @Override
             public void onClick(View v) {
-
+                
 
             }
         });
