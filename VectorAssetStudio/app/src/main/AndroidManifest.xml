@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.RasterActivity"/>
+        <activity android:name=".activities.GalleryActivity"/>
         <activity android:name=".activities.VectorActivity"/>
 
         <meta-data

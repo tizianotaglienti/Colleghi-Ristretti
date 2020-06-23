@@ -24,18 +24,18 @@ public class MainActivity extends AppCompatActivity {
 
         private Context context;
         private Intent intent;
-        private Button btnRaster;
-        private Button btnVector;
+        private Button button_gallery;
+        //private Button btnVector;
 
 
         public Holder( Context context ){
 
             this.context = context;
-            this.btnRaster = findViewById(R.id.btnRaster);
-            this.btnVector = findViewById(R.id.btnVector);
+            this.button_gallery = findViewById(R.id.button_gallery);
+            //this.btnVector = findViewById(R.id.btnVector);
 
-            this.btnRaster.setOnClickListener(this);
-            this.btnVector.setOnClickListener(this);
+            this.button_gallery.setOnClickListener(this);
+            //this.btnVector.setOnClickListener(this);
 
 
 
@@ -45,15 +45,17 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             switch (view.getId()){
 
-                case R.id.btnRaster:
-                    this.intent = new Intent(this.context, RasterActivity.class);
+                case R.id.button_gallery:
+                    this.intent = new Intent(this.context, GalleryActivity.class);
                     startActivityForResult(intent, 0);
                     break;
 
-                case R.id.btnVector:
+                /*case R.id.btnVector:
                     this.intent = new Intent(this.context, VectorActivity.class);
                     startActivityForResult(intent, 0);
                     break;
+
+                 */
 
 
             }
